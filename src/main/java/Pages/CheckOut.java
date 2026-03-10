@@ -15,7 +15,12 @@ public class CheckOut {
     sumInf=$(".summary_info"),
     subTotal=$(".summary_subtotal_label"),
     taxLab=$(".summary_tax_label"),
-   total= $(".summary_total_label");
+   total= $(".summary_total_label"),
+    titleA=$("span.title");
+
+    public SelenideElement getTitleA() {
+        return titleA;
+    }
 
     public SelenideElement getTitle() {
         return title;

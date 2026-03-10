@@ -165,8 +165,8 @@ public class FixMe extends BaseTest {
         checkout.fillData();
        // $("#continue").click();
         checkout.clickContinue();
-        $("span.title").shouldHave(text("Checkout: Overview"));
-
+       // $("span.title").shouldHave(text("Checkout: Overview"));
+        checkout.verifyTitle();
         $(".summary_info").shouldBe(visible);
         $(".summary_subtotal_label").shouldHave(text("Item total"));
         $(".summary_tax_label").shouldHave(text("Tax"));

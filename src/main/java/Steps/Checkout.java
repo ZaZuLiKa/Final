@@ -2,6 +2,7 @@ package Steps;
 
 import Pages.CheckOut;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 public class Checkout {
@@ -23,6 +24,10 @@ public class Checkout {
 
     public Checkout getCheckBut() {
         checkOut.getCheckBut().click();
+        return this;
+    }
+    public Checkout verifyTitle(){
+        checkOut.getTitleA().shouldHave(text("Checkout: Overview"));
         return this;
     }
 }
