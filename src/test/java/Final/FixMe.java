@@ -167,11 +167,6 @@ public class FixMe extends BaseTest {
         checkout.clickContinue();
        // $("span.title").shouldHave(text("Checkout: Overview"));
         checkout.verifyTitle();
-
         checkout.verifyDetails();
-        $("span.title").shouldHave(text("Checkout: Complete!"));
-        $(".complete-header").shouldHave(text("Thank you for your order!"));
-        $(".complete-text").shouldBe(visible);
-        $("[data-test='back-to-products']").shouldBe(visible);
     }
 }

@@ -42,10 +42,10 @@ public class Checkout {
         checkOut.getTaxLab().shouldHave(text("Tax"));
         checkOut.getTotal().shouldHave(text("Total"));
         checkOut.getFinish().click();
-        $("span.title").shouldHave(text("Checkout: Complete!"));
-        $(".complete-header").shouldHave(text("Thank you for your order!"));
-        $(".complete-text").shouldBe(visible);
-        $("[data-test='back-to-products']").shouldBe(visible);
+        checkOut.getTitle().shouldHave(text("Checkout: Complete!"));
+        checkOut.getHeader().shouldHave(text("Thank you for your order!"));
+        checkOut.getCompletetext().shouldBe(visible);
+        checkOut.getProducts().shouldBe(visible);
 
         return this;
     }

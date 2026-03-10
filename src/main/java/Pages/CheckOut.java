@@ -17,7 +17,22 @@ public class CheckOut {
     SelenideElement taxLab=$(".summary_tax_label");
     SelenideElement total= $(".summary_total_label");
     SelenideElement titleA=$("span.title");
+    SelenideElement header= $(".complete-header");
 
+    public SelenideElement getHeader() {
+        return header;
+    }
+
+    public SelenideElement getCompletetext() {
+        return completetext;
+    }
+
+    public SelenideElement getProducts() {
+        return products;
+    }
+
+    SelenideElement completetext=$(".complete-text");
+    SelenideElement products=$("[data-test='back-to-products']");
     public SelenideElement getFinish() {
         return finish;
     }
