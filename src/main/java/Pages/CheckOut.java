@@ -37,10 +37,7 @@ public class CheckOut {
         return total;
     }
 
-    $("span.title").shouldHave(text("Checkout: Complete!"));
-    $(".complete-header").shouldHave(text("Thank you for your order!"));
-    $(".complete-text").shouldBe(visible);
-    $("[data-test='back-to-products']").shouldBe(visible);
+
     public SelenideElement getButContinue() {
         return butContinue;
     }
