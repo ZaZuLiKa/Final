@@ -6,18 +6,23 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CheckOut {
-    SelenideElement checkBut=$("#checkout"),
-    firstName=$("[data-test='firstName']"),
-    lastName=$("[data-test='lastName']"),
-    zip=$("[data-test='postalCode']"),
-    butContinue=$("#continue"),
-    title=$("span.title"),
-    sumInf=$(".summary_info"),
-    subTotal=$(".summary_subtotal_label"),
-    taxLab=$(".summary_tax_label"),
-   total= $(".summary_total_label"),
-    titleA=$("span.title");
+    SelenideElement checkBut=$("#checkout");
+    SelenideElement firstName=$("[data-test='firstName']");
+    SelenideElement lastName=$("[data-test='lastName']");
+    SelenideElement zip=$("[data-test='postalCode']");
+    SelenideElement butContinue=$("#continue");
+    SelenideElement title=$("span.title");
+    SelenideElement sumInf=$(".summary_info");
+    SelenideElement subTotal=$(".summary_subtotal_label");
+    SelenideElement taxLab=$(".summary_tax_label");
+    SelenideElement total= $(".summary_total_label");
+    SelenideElement titleA=$("span.title");
 
+    public SelenideElement getFinish() {
+        return finish;
+    }
+
+    SelenideElement finish=$("#finish");
     public SelenideElement getTitleA() {
         return titleA;
     }
